@@ -1,0 +1,186 @@
+.first_part .change_shape{
+    width: 50%;
+    height: 100%;
+    border-radius: 25px 0px 0px 25px;
+    padding: 40px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.first_part .change_shape .f_block_of_button{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+} 
+.first_part .change_shape button{
+    background-color: white;
+    height: 100%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 4px 0px;  
+    outline: none;
+    border: none;
+    margin: 0px 20px 0px 20px;
+    font-family: cursive;  
+}
+
+.first_part .change_shape .grid_container{
+    width: 100%;
+    margin-top: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    height: calc(100% - 100px);
+    background-color: white;
+    box-shadow: 0px 0px 7px 0 black;
+    border-radius: 30px;
+}
+
+.first_part .change_shape .f_bl{
+    background-color: blue;
+}
+
+.anim_for_f_bl{
+    animation: anim_f_bl 3s linear infinite;
+}
+
+@keyframes anim_f_bl{
+    0%{
+        border-radius: 0px;
+        background-color: blue;
+    }
+
+    25%{
+        transform: translateX(calc(100% + 20px));
+        border-radius: 55px;
+        background-color: hotpink;
+    }
+    50%{
+        transform: translate(calc(100% + 20px), calc(100% + 20px));
+        background-color: crimson;
+        border-radius: 0px;
+    }
+    75%{
+        transform: translate(0, calc(100% + 20px));
+        background-color: rosybrown;
+        border-radius: 55px;
+    }
+    100%{
+        transform: translate(0, 0);
+        border-radius: 0px;
+        background-color: blue;
+    }
+}
+
+.first_part .change_shape .s_bl{
+    background-color: hotpink;
+}
+
+.anim_for_s_bl{
+    animation: anim_s_bl 3s linear infinite;
+}
+
+@keyframes anim_s_bl{
+    0%{
+        border-radius: 0px;
+        background-color: hotpink
+    }
+
+    25%{
+        transform: translateY(calc(100% + 20px));
+        border-radius: 55px;
+        background-color: crimson;
+    }
+    50%{
+        transform: translate(calc(-100% - 20px), calc(100% + 20px));
+        background-color: rosybrown;
+        border-radius: 0px;
+    }
+    75%{
+        transform: translate(calc(-100% - 20px), 0);
+        background-color: blue;
+        border-radius: 55px;
+    }
+    100%{
+        transform: translate(0, 0);
+        border-radius: 0px;
+        background-color: hotpink;
+    }
+}
+
+
+.first_part .change_shape .t_bl{
+    background-color: rosybrown;
+}
+
+.anim_for_t_bl{
+    animation: anim_t_bl 3s linear infinite;
+}
+
+@keyframes anim_t_bl{
+    0%{
+        border-radius: 0px;
+        background-color: rosybrown;
+    }
+
+    25%{
+        transform: translateY(calc(-100% - 20px));
+        border-radius: 55px;
+        background-color: blue;
+    }
+    50%{
+        transform: translate(calc(100% + 20px), calc(-100% - 20px));
+        background-color: hotpink;
+        border-radius: 0px;
+    }
+    75%{
+        transform: translate(calc(100% + 20px), 0);
+        background-color: crimson;
+        border-radius: 55px;
+    }
+    100%{
+        transform: translate(0, 0);
+        border-radius: 0px;
+        background-color: rosybrown;
+    }
+}
+
+.first_part .change_shape .fr_bl{
+    background-color: crimson;
+}
+
+.anim_for_fr_bl{
+    animation: anim_fr_bl 3s linear infinite;
+}
+
+@keyframes anim_fr_bl{
+    0%{
+        border-radius: 0px;
+        background-color: crimson;
+    }
+
+    25%{
+        transform: translateX(calc(-100% - 20px));
+        border-radius: 55px;
+        background-color: rosybrown;
+    }
+    50%{
+        transform: translate(calc(-100% - 20px), calc(-100% - 20px));
+        background-color: blue;
+        border-radius: 0px;
+    }
+    75%{
+        transform: translate(0, calc(-100% - 20px));
+        background-color: hotpink;
+        border-radius: 55px;
+    }
+    100%{
+        transform: translate(0, 0);
+        border-radius: 0px;
+        background-color: crimson;
+    }
+}

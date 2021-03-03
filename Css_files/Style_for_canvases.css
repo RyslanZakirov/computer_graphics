@@ -1,0 +1,43 @@
+.third_part .container_for_canvas #convert_image{
+    display: block;
+    height: 30px;
+    width: 200px;
+    margin: 0px auto;
+    border-radius: 15px 0 15px 0;
+    border: 1px dashed rosybrown;
+    outline: none;
+}
+
+.third_part .container_for_canvas .first_canvas{
+    width: 100%;
+    margin-top: 20px;
+    height: calc(100% - 50px);
+    box-shadow: 0px 0px 20px 3px grey;
+}
+
+.third_part .container_for_canvas .first_canvas canvas{
+    width: 100%;
+    height: 100%;
+}
+
+.third_part .sec_container_for_canvas #make_grey_color{
+    display: block;
+    height: 30px;
+    width: 200px;
+    margin: 0px auto;
+    border-radius: 0 15px 0 15px;
+    outline: none;
+    border: 1px dashed rosybrown;
+}
+
+.third_part .sec_container_for_canvas .second_canvas{
+    width: 100%;
+    margin-top: 20px;
+    height: calc(100% - 50px);
+    box-shadow: 0px 0px 20px 3px grey;
+}
+
+.third_part .sec_container_for_canvas .second_canvas canvas{
+    width: 100%;
+    height: 100%;
+}
